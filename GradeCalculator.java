@@ -33,7 +33,7 @@ public class GradeCalculator{
                 gradeConversion = "You Are a Deans' Lister";
             }else if(average <= 3){
                 gradeConversion = "You Just Barely Passed and didn't Fail, youmfs";
-            }else if(average <= 5 && average <= 4){
+            }else if(average > 3.0 && average <= 5.0){
                 gradeConversion = "bagsak ka!";
             }else{
                 gradeConversion = "Only Applicable to 1-5 grading system. Please enter grades 1-5 only.";
