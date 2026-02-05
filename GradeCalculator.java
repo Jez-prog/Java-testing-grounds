@@ -43,6 +43,8 @@ public class GradeCalculator{
         System.out.println("Student:" + (name));
         System.out.println("Average:" + String.format("%.2f", average));
         System.out.println(gradeConversion);
+
+        coolestInput.close();
         
         
             
