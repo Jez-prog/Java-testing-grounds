@@ -44,6 +44,20 @@ public class StudentRecord {
 
     }
 
+    public static void viewAllStudent(){
+
+        if(studentCount == 0){
+            System.out.print("No student in the system yet. Please add student.");
+            return;
+        }
+
+        System.out.println("\n======Student Records=======");
+        for(int i = 0; i < studentCount; i++){
+            System.out.println("\n"  + (i + 1) + ".Name: " + names); 
+            System.out.println("ID: " + (id));
+            System.out.println("GPA: "+ (gpa));
+        }
+    }
 
 
 
@@ -55,6 +69,7 @@ public class StudentRecord {
 
         addStudent();
         addStudent();
+        viewAllStudent();
 
         scanner.close();
 
